@@ -22,9 +22,9 @@
 .colcontainers-panel,
 .colcontainers-container-card {
   min-width: 0;
-  border: 1px solid rgba(148, 163, 184, 0.14);
+  border: 1px solid color-mix(in srgb, var(--border-color) 55%, transparent);
   border-radius: 14px;
-  background: rgba(15, 23, 42, 0.54);
+  background: color-mix(in srgb, var(--background-color) 55%, var(--card-color));
 }
 
 .colcontainers-summary-card {
@@ -101,6 +101,35 @@
 
 .colcontainers-credentials-form label {
   flex: 1 1 160px;
+}
+
+.colcontainers-credentials-form .colcontainers-panel-actions {
+  width: 100%;
+  justify-content: flex-start;
+  margin-top: 4px;
+}
+
+.colcontainers-countdown {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.025em;
+}
+
+.colcontainers-container-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  overflow-wrap: anywhere;
+}
+
+.colcontainers-error.is-login {
+  border-color: rgba(251, 191, 36, 0.3);
+  color: #fcd34d;
+  background: rgba(146, 64, 14, 0.14);
+}
+
+.colcontainers-error.is-login strong,
+.colcontainers-error.is-login span {
+  color: #fcd34d;
 }
 
 .colcontainers-number-form label {
@@ -326,6 +355,10 @@
   flex-direction: column;
   gap: 5px;
   margin-top: 12px;
+}
+
+.colcontainers-container-info {
+  display: flex;
 }
 
 .colcontainers-container-meta {
