@@ -1,0 +1,12 @@
+{
+  "id": "coldesc",
+  "name": "DESC 容器管理",
+  "description": "查看 DESC 容器剩余时间，并按照设置自动续约。",
+  "icon": null,
+  "category": "开发工具",
+  "color": "#38bdf8",
+  "tool_type": "continuous",
+  "view": "coldesc",
+  "frontend": "ui/ColdescView.vue",
+  "backend": "plugins.coldesc.backend:create_plugin"
+}
